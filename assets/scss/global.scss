@@ -9,4 +9,17 @@ h1 {
   color: rgb(160, 157, 156);
 }
 
+.skill {
+  img {
+    width: 80px; 
+    height: 90px; 
+    object-fit: contain; 
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+
 
