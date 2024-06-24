@@ -6,13 +6,13 @@
           <h1 class="animate__animated animate__backInLeft sm:text-xs lg:text-4xl">Hi, I'm a Frontend Engineer.</h1>
           <h1 class="animate__animated animate__backInLeft mt-6">
             <span class="job-title sm:text-xs lg:text-4xl">My name is</span>
-            <span class="sm:text-3xl lg:text-6xl font-bold text-violet-300"> Sin-Mei, Kuo.</span>
+            <span class="sm:text-3xl lg:text-6xl font-bold text-violet-300"> Sin-Mei, Kuo</span>
           </h1>
         </div>
 
         <div class="flex-item item-2 animate__animated animate__heartBeat sm:text-sm">
           <div class="slider">
-            <h2 class="rounded-lg bg-gray-200 sm:w-72 h-20 lg:w-80" :style="{ backgroundColor: rgbaCode }"></h2>
+            <h2 class="rounded-lg bg-gray-200 w-72 h-20 lg:w-80" :style="{ backgroundColor: rgbaCode }"></h2>
 
             <!-- RGB 調節器 -->
             <div>
@@ -32,17 +32,17 @@
             </div>
             <div>
               <span class="alpha">opacity</span>
-              <input type="range" v-model.number="alpha" min="0" max="1" step="0.01" class="mr-3 mx-3 lg:w-48 sm:w-15">
-              <span class="alpha">{{ alpha.toFixed(2) }}</span>
+              <input type="range" v-model.number="alpha" min="0" max="1" step="0.01" class="mr-3 mx-3  lg:w-48 sm:w-15">
+              <span class="alpha mr-12">{{ alpha.toFixed(2) }}</span>
             </div>
 
             <!-- 顏色展示和 RGBA Code -->
             <div class="flex flex-row sm:flex flex-col ">
               <div class="" @click="copyHexCode">
-                <h2 class="hex-code text-center">{{ hexCode }}</h2>
+                <h2 class="hex-code flex items-center justify-center lg:h-20 rounded-lg">{{ hexCode }}</h2>
               </div>
               <div class="">
-                <h2 class="rgbaCode">{{ rgbaCode }}</h2>
+                <h2 class="rgbaCode flex items-center justify-center lg:h-20 rounded-lg">{{ rgbaCode }}</h2>
               </div>
             </div>
 
@@ -55,15 +55,15 @@
           <!-- 經歷 -->
           <div class="flex-item item-5 h-750 rounded-xl lg:py-8 lg:px-8">
           
-            <div class="lg:text-center space-y-2 sm:text-start">
+            <div class="text-center space-y-2 sm:text-start">
               <div class="space-y-0.5">
-                <p class="lg:text-4xl text-white font-semibold underline underline-offset-8 mb-5">
+                <p class="lg:text-4xl mr-9 text-white font-semibold underline underline-offset-8 mb-5">
                   Experience
                 </p>
-                <p class="lg:text-2xl text-slate-500">
-                  GEOSAT Aerospace & Technology <br > Front-End Engineer
+                <p class="text-sm mr-9 lg:text-2xl text-slate-500">
+                  GEOSAT Aerospace & Technology Front-End Engineer
                 </p>
-                <p class="text-slate-500 font-thin">20230501-20240614</p>
+                <p class="text-slate-500 mr-9 font-thin">2023.05-2024.06</p>
               </div>
               <!-- 1 -->
               <div class="flight-trainning p-6 max-w-3xl bg-white rounded-xl shadow-lg flex items-center space-x-4">
@@ -165,7 +165,7 @@
         <h1 class="text-center mb-5 text-white font-semibold underline underline-offset-8 sm:text-sm lg:text-4xl">
               SKILLS
         </h1>
-        <div class="skill py-8 px-8  bg-stone-900 rounded-xl shadow-lg space-y-2 sm:py-4 sm:space-y-0 sm:space-x-6 sm:w-2/4 lg:w-2/3 sm:flex flex-col">    
+        <div class="skill py-8 px-8  bg-stone-900 rounded-xl shadow-lg space-y-2 sm:py-4 sm:space-y-0 sm:space-x-6 w-11/12 lg:w-2/3 sm:flex flex-col">    
 
           <div class="flex-item item-7 text-center space-y-4 sm:text-left sm:flex-wrap">
             <div class="space-y-0.5">
@@ -173,18 +173,18 @@
                 Front-End Basic
               </p>
             </div>
-            <div class="p-6 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 lg:max-w-2xl">
-              <div class=" border-double border-4 border-sky-900 bg-black">
+            <div class="p-6 lg:mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 w-70 lg:max-w-2xl">
+              <div class="w-20 lg:w-32 border-double border-4 border-sky-900 bg-black">
                 <img class="" src="/assets/javascript.svg" alt="javascript Logo">
-                <p class="text-white text-center sm:text-sm lg:text-xl">JavaScript</p>
+                <p class="text-white text-center text-sm lg:text-xl">JavaScript</p>
               </div>
-              <div class=" border-double border-4 border-sky-900 bg-black">
+              <div class="w-20 lg:w-32 border-double border-4 border-sky-900 bg-black">
                 <img class="" src="/assets/css.svg" alt="css Logo">
-                <p class="text-white text-center sm:text-sm lg:text-xl">css</p>
+                <p class="text-white text-center text-sm lg:text-xl">css</p>
               </div>
-              <div class=" border-double border-4 border-sky-900 bg-black">
+              <div class="w-20 lg:w-32 border-double border-4 border-sky-900 bg-black">
                 <img class="" src="/assets/html.svg" alt="html Logo">
-                <p class="text-white text-center sm:text-sm lg:text-xl">html</p>
+                <p class="text-white text-center text-sm lg:text-xl">html</p>
               </div>
             </div>
           </div>
@@ -195,18 +195,18 @@
                 Front-End Framework
               </p>
             </div>
-            <div class="p-6 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 max-w-2xl">
-              <div class="border-double border-4 border-sky-900 bg-black">
+            <div class="p-6 lg:mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 w-70 lg:max-w-2xl">
+              <div class="w-20 lg:w-32 border-double border-4 border-sky-900 bg-black">
                 <img class="mt-5 mb-3" src="/assets/vue.svg" alt="vue Logo">
-                <p class="text-white text-center sm:text-sm lg:text-xl">Vue</p>
+                <p class="text-white text-center text-sm lg:text-xl">Vue</p>
               </div>
-              <div class=" border-double border-4 border-sky-900 bg-black">
+              <div class="w-20 lg:w-32 border-double border-4 border-sky-900 bg-black">
                 <img class=" mt-5 mb-3" src="/assets/nuxt.svg" alt="nuxt Logo">
-                <p class="text-white text-center sm:text-sm lg:text-xl">Nuxt</p>
+                <p class="text-white text-center text-sm lg:text-xl">Nuxt</p>
               </div>
-              <div class=" border-double border-4 border-sky-900 bg-black">
+              <div class="w-20 lg:w-32 border-double border-4 border-sky-900 bg-black">
                 <img class=" mt-5 mb-3" src="/assets/pinia.svg" alt="pinia Logo">
-                <p class="text-white text-center sm:text-sm lg:text-xl">Pinia</p>
+                <p class="text-white text-center text-sm lg:text-xl">Pinia</p>
               </div>
             </div>
           </div>
@@ -217,22 +217,22 @@
                 CSS Frameworks and Preprocessors
               </p>
             </div>
-            <div class="css-frameworks p-6 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 max-w-2xl">
-              <div class="ml-4 border-double border-4 border-sky-900 bg-black">
+            <div class="p-6 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 w-64 h-80 flex-wrap lg:max-w-2xl">
+              <div class="w-20 lg:w-32 ml-4 border-double border-4 border-sky-900 bg-black">
                 <img class="mt-5 mb-3" src="/assets/bootstrap.svg" alt="bootstrap Logo">
-                <p class="text-white text-center sm:text-sm lg:text-xl">Bootstrap</p>
+                <p class="text-white text-center text-sm lg:text-xl">Bootstrap</p>
               </div>
-              <div class=" border-double border-4 border-sky-900 bg-black">
+              <div class="w-20 lg:w-32 border-double border-4 border-sky-900 bg-black">
                 <img class=" mt-5 mb-3" src="/assets/vuetify.svg" alt="vuetify Logo">
-                <p class="text-white text-center sm:text-sm lg:text-xl">Vuetify</p>
+                <p class="text-white text-center text-sm lg:text-xl">Vuetify</p>
               </div>
-              <div class=" border-double border-4 border-sky-900 bg-black">
+              <div class="w-20 lg:w-32  border-double border-4 border-sky-900 bg-black">
                 <img class="mt-5 mb-3" src="/assets/tailwind.svg" alt="tailwind Logo">
-                <p class="text-white text-center sm:text-sm lg:text-xl">Tailwind css</p>
+                <p class="text-white text-center text-sm lg:text-xl">Tailwind css</p>
               </div>
-              <div class=" border-double border-4 border-sky-900 bg-black">
+              <div class="w-20 lg:w-32 border-double border-4 border-sky-900 bg-black">
                 <img class=" mt-5 mb-3" src="/assets/scss.svg" alt="scss Logo">
-                <p class="text-white text-center sm:text-sm lg:text-xl">Sass/Scss</p>
+                <p class="text-white text-center text-sm lg:text-xl">Sass/Scss</p>
               </div>
             </div>
           </div>
@@ -366,18 +366,18 @@ updateColorFromHex();
   }
 
   .flight-trainning {
-    width: 300px;
+    width: 320px;
     height: 300px;
 
   }
 
   .geosat{
-    width: 300px;
+    width: 320px;
     height: 300px;
   }
   
   .road{
-    width: 300px;
+    width: 320px;
     height: 300px;
   }
 
@@ -404,14 +404,8 @@ updateColorFromHex();
       }
     }
 
-  .css-frameworks {
-    width: 300px;
-    height: 300px;
-    flex-wrap: wrap;
-  }
-
   .item-5{
-    width: 28%; /* 小屏幕下佔滿寬度 */
+    width: 31%; /* 小屏幕下佔滿寬度 */
   }
 
   .item-6 {
@@ -420,7 +414,8 @@ updateColorFromHex();
 }
 
 .slider {
-  height: 600px;
+  width: 500px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -431,7 +426,7 @@ updateColorFromHex();
 .green,
 .blue,
 .alpha {
-  border-radius: 20%;
+  border: #484545 1px solid;
   padding: 10px;
 }
 
@@ -453,7 +448,7 @@ updateColorFromHex();
 
 h2 {
   color: #ffffff;
-  background-color: rgba(75, 63, 63, 0.5);
+  background-color: rgba(139, 143, 166, 0.5);
   border: 2px solid #484545;
   margin: 10px 10px;
   padding: 5px 30px;
