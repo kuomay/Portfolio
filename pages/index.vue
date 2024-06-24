@@ -2,44 +2,44 @@
   <div class="scroller w-screen overflow-y-scroll 2xl:h-[calc(100vh-4rem)] 2xl:snap-y 2xl:snap-mandatory">
       <!-- 個人 -->
       <div class="flex-container 2xl:snap-center">
-        <div class="flex-item item-1 sm:text-sm sm:text-left">
-          <h1 class="animate__animated animate__backInLeft ">Hi, I'm a Frontend Engineer.</h1>
+        <div class="flex-item item-1">
+          <h1 class="animate__animated animate__backInLeft sm:text-xs lg:text-4xl">Hi, I'm a Frontend Engineer.</h1>
           <h1 class="animate__animated animate__backInLeft mt-6">
-            <span class="job-title">My name is</span>
-            <span class="text-6xl font-bold text-violet-300"> Sin-Mei, Kuo.</span>
+            <span class="job-title sm:text-xs lg:text-4xl">My name is</span>
+            <span class="sm:text-3xl lg:text-6xl font-bold text-violet-300"> Sin-Mei, Kuo.</span>
           </h1>
         </div>
 
         <div class="flex-item item-2 animate__animated animate__heartBeat sm:text-sm">
           <div class="slider">
-            <h2 class="w-80 h-20 rounded-lg" :style="{ backgroundColor: rgbaCode }"></h2>
+            <h2 class="rounded-lg bg-gray-200 sm:w-72 h-20 lg:w-80" :style="{ backgroundColor: rgbaCode }"></h2>
 
             <!-- RGB 調節器 -->
             <div>
               <span class="red">R</span>
-              <input type="range" v-model.number="rgb[0]" min="0" max="255" class="mr-3 mx-3 w-48">
+              <input type="range" v-model.number="rgb[0]" min="0" max="255" class="mr-3 mx-3 lg:w-48 sm:w-15">
               <span class="red">{{ rgb[0] }}</span>
             </div>
             <div>
               <span class="green">G</span>
-              <input type="range" v-model.number="rgb[1]" min="0" max="255" class="mr-3 mx-3 w-48">
+              <input type="range" v-model.number="rgb[1]" min="0" max="255" class="mr-3 mx-3 lg:w-48 sm:w-15">
               <span class="green">{{ rgb[1] }}</span>
             </div> 
             <div>
               <span class="blue">B</span>
-              <input type="range" v-model.number="rgb[2]" min="0" max="255" class="mr-3 mx-3 w-48">
+              <input type="range" v-model.number="rgb[2]" min="0" max="255" class="mr-3 mx-3 lg:w-48 sm:w-15">
               <span class="blue">{{ rgb[2] }}</span>
             </div>
             <div>
               <span class="alpha">opacity</span>
-              <input type="range" v-model.number="alpha" min="0" max="1" step="0.01" class="mr-3 mx-3 w-48">
+              <input type="range" v-model.number="alpha" min="0" max="1" step="0.01" class="mr-3 mx-3 lg:w-48 sm:w-15">
               <span class="alpha">{{ alpha.toFixed(2) }}</span>
             </div>
 
             <!-- 顏色展示和 RGBA Code -->
-            <div class="flex flex-row">
+            <div class="flex flex-row sm:flex flex-col ">
               <div class="" @click="copyHexCode">
-                <h2 class="hex-code">{{ hexCode }}</h2>
+                <h2 class="hex-code text-center">{{ hexCode }}</h2>
               </div>
               <div class="">
                 <h2 class="rgbaCode">{{ rgbaCode }}</h2>
@@ -50,25 +50,25 @@
         </div>
       </div>
 
-      <!-- 經歷 -->
-        <div class="experience 2xl:snap-center">
+            <!-- 經歷 -->
+      <div class="experience 2xl:snap-center">
           <!-- 經歷 -->
-          <div class="flex-item item-5 py-8 px-8 h-750 rounded-xl space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+          <div class="flex-item item-5 h-750 rounded-xl lg:py-8 lg:px-8">
           
-            <div class="text-center space-y-2 sm:text-left">
+            <div class="lg:text-center space-y-2 sm:text-start">
               <div class="space-y-0.5">
-                <p class="text-4xl text-white font-semibold underline underline-offset-8 mb-5 sm:text-sm">
+                <p class="lg:text-4xl text-white font-semibold underline underline-offset-8 mb-5">
                   Experience
                 </p>
-                <p class="text-2xl text-slate-500">
-                  GEOSAT Aerospace & Technology Front-End Engineer
+                <p class="lg:text-2xl text-slate-500">
+                  GEOSAT Aerospace & Technology <br > Front-End Engineer
                 </p>
                 <p class="text-slate-500 font-thin">20230501-20240614</p>
               </div>
               <!-- 1 -->
-              <div class="p-6 max-w-3xl mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+              <div class="flight-trainning p-6 max-w-3xl bg-white rounded-xl shadow-lg flex items-center space-x-4">
                 <div class="shrink-0">
-                  <img class="w-80 h-40" src="/assets/013 2024-06-21 185608.png" alt="">
+                  <img class="w-80 h-40 hidden sm:block" src="/assets/013 2024-06-21 185608.png" alt="">
                 </div>
                 <div>
                   <div class="text-xl font-medium text-black ">國防部飛操手平台</div>
@@ -85,9 +85,9 @@
               </div>
 
               <!-- 2 -->
-              <div class="p-6 max-w-3xl bg-white rounded-xl shadow-lg flex items-center space-x-4">
+              <div class="geosat p-6 max-w-3xl bg-white rounded-xl shadow-lg flex items-center space-x-4">
                 <div class="shrink-0">
-                  <img class="w-80 h-40" src="/assets/3332024-06-21 225416.png" alt="">
+                  <img class="w-80 h-40 hidden sm:block" src="/assets/3332024-06-21 225416.png" alt="">
                 </div>
                 <div>
                   <div class="text-xl font-medium text-black">GEOSAT 官網</div>
@@ -101,14 +101,14 @@
               </div>
 
               <!-- 3 -->
-              <div class="p-6 max-w-3xl mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+              <div class="road p-6 max-w-3xl bg-white rounded-xl shadow-lg flex items-center space-x-4">
                 <div class="shrink-0">
-                  <img class="w-80 h-40" src="/assets/1112024-06-21 225338.png" alt="">
+                  <img class="w-80 h-40 hidden sm:block" src="/assets/1112024-06-21 225338.png" alt="">
                 </div>
                 <div>
                   <div class="text-xl font-medium text-black">台南市道路挖掘系統</div>
                   <div class="flex flex-row flex-wrap"> 
-                    <div class="w-24 h-7 text-center mt-2 mb-2 mr-2 px-4 py-1 text-sm text-green-800 font-semibold rounded-full border border-green-600 hover:text-white hover:bg-green-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2">Vue2</div>
+                    <div class="lg:w-24 h-7 text-center mt-2 mb-2 mr-2 px-4 py-1 text-sm text-green-800 font-semibold rounded-full border border-green-600 hover:text-white hover:bg-green-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2">Vue2</div>
                     <div class="w-28 h-7 text-center mt-2 mb-2 mr-2 px-4 py-1 text-sm text-lime-600 font-semibold rounded-full border border-lime-600 hover:text-white hover:bg-lime-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-lime-600 focus:ring-offset-2">Vue Router</div>
                     <div class="w-24 h-7 text-center mt-2 mb-2 mr-2 px-4 py-1 text-sm text-emerald-700 font-semibold rounded-full border border-emerald-600 hover:text-white hover:bg-emerald-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2">Vuetify</div>
                     <div class="w-24 h-7 text-center mt-2 mb-2 mr-2 px-4 py-1 text-sm text-emerald-950 font-semibold rounded-full border border-emerald-600 hover:text-white hover:bg-emerald-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2">Vuex</div>
@@ -124,32 +124,32 @@
           <div class="flex-item item-6 rounded-xl space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">    
           <div class="text-center space-y-2 sm:text-left">
             <div class="space-y-0.5">
-              <p class="text-4xl text-white font-semibold underline underline-offset-8 mb-5">
+              <p class="lg:text-4xl text-white font-semibold underline underline-offset-8 mb-5 mt-4">
                 Education
               </p>
-              <p class="text-slate-500 text-2xl">
+              <p class="text-slate-500 lg:text-2xl">
                 Highest Education
               </p>
             </div>
-            <div class="p-6 max-w-2xl mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+            <div class="nkuht p-6 max-w-2xl mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
               <div class="shrink-0">
                 <img class="h-12 w-12" src="https://www.nkuht.edu.tw/var/file/0/1000/img/22/logo.gif" alt="NKUHT Logo">
               </div>
               <div>
-                <div class="text-xl font-medium text-black">National Kaohsiung University of Hospitality and Tourism</div>
-                <p class="text-slate-500">
-                  Department of Leisure and Recreation Management</p>
+                <div class="nkuht-school lg:text-xl font-medium text-black">NKUHT</div>
+                <p class="nkuht-school lg:text-slate-500">
+                  Department of Leisure and  Recreation Management</p>
                   <p class="text-slate-600">
                     2018,09-2022,06</p>
               </div>
             </div>
 
-            <div class="p-6 max-w-2xl mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+            <div class="ispan p-6 max-w-2xl mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
               <div class="shrink-0">
                 <img class="h-12 w-12" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHccVyKLa3JFZlTEzKGdPaE-msts8a3C_ymQ&s" alt="iSpan Logo">
               </div>
               <div>
-                <div class="text-xl font-medium text-black">iSpan International Inc.</div>
+                <div class="font-medium text-black lg:text-xl ">iSpan International Inc.</div>
                 <p class="text-slate-500">
                   Front-End Engineer Training Program</p>
                   <p class="text-slate-600">
@@ -162,51 +162,51 @@
 
       <!-- SKILL -->
       <div class="2xl:snap-center">
-        <h1 class="text-center mb-5 text-white font-semibold underline underline-offset-8">
+        <h1 class="text-center mb-5 text-white font-semibold underline underline-offset-8 sm:text-sm lg:text-4xl">
               SKILLS
         </h1>
-        <div class="skill py-8 px-8  bg-stone-900 rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">    
+        <div class="skill py-8 px-8  bg-stone-900 rounded-xl shadow-lg space-y-2 sm:py-4 sm:space-y-0 sm:space-x-6 sm:w-2/4 lg:w-2/3 sm:flex flex-col">    
 
-          <div class="flex-item item-7 text-center space-y-4 sm:text-left">
+          <div class="flex-item item-7 text-center space-y-4 sm:text-left sm:flex-wrap">
             <div class="space-y-0.5">
               <p class="text-slate-500 font-medium mt-7">
                 Front-End Basic
               </p>
             </div>
-            <div class="p-6 max-w-2xl mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+            <div class="p-6 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 lg:max-w-2xl">
               <div class=" border-double border-4 border-sky-900 bg-black">
                 <img class="" src="/assets/javascript.svg" alt="javascript Logo">
-                <p class="text-white text-center">JavaScript</p>
+                <p class="text-white text-center sm:text-sm lg:text-xl">JavaScript</p>
               </div>
               <div class=" border-double border-4 border-sky-900 bg-black">
                 <img class="" src="/assets/css.svg" alt="css Logo">
-                <p class="text-white text-center">css</p>
+                <p class="text-white text-center sm:text-sm lg:text-xl">css</p>
               </div>
               <div class=" border-double border-4 border-sky-900 bg-black">
                 <img class="" src="/assets/html.svg" alt="html Logo">
-                <p class="text-white text-center">html</p>
+                <p class="text-white text-center sm:text-sm lg:text-xl">html</p>
               </div>
             </div>
           </div>
 
-          <div class="flex-item item-8 text-center space-y-4 sm:text-left">
+          <div class="flex-item item-8 text-center space-y-4 sm:text-left sm:flex-wrap">
             <div class="space-y-0.5">
               <p class="text-slate-500 font-medium mt-7">
                 Front-End Framework
               </p>
             </div>
-            <div class="p-6 max-w-2xl mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+            <div class="p-6 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 max-w-2xl">
               <div class="border-double border-4 border-sky-900 bg-black">
                 <img class="mt-5 mb-3" src="/assets/vue.svg" alt="vue Logo">
-                <p class="text-white text-center">Vue</p>
+                <p class="text-white text-center sm:text-sm lg:text-xl">Vue</p>
               </div>
               <div class=" border-double border-4 border-sky-900 bg-black">
                 <img class=" mt-5 mb-3" src="/assets/nuxt.svg" alt="nuxt Logo">
-                <p class="text-white text-center">Nuxt</p>
+                <p class="text-white text-center sm:text-sm lg:text-xl">Nuxt</p>
               </div>
               <div class=" border-double border-4 border-sky-900 bg-black">
                 <img class=" mt-5 mb-3" src="/assets/pinia.svg" alt="pinia Logo">
-                <p class="text-white text-center">Pinia</p>
+                <p class="text-white text-center sm:text-sm lg:text-xl">Pinia</p>
               </div>
             </div>
           </div>
@@ -217,43 +217,25 @@
                 CSS Frameworks and Preprocessors
               </p>
             </div>
-            <div class="p-6 max-w-2xl mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
-              <div class=" border-double border-4 border-sky-900 bg-black">
+            <div class="css-frameworks p-6 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 max-w-2xl">
+              <div class="ml-4 border-double border-4 border-sky-900 bg-black">
                 <img class="mt-5 mb-3" src="/assets/bootstrap.svg" alt="bootstrap Logo">
-                <p class="text-white text-center">Bootstrap</p>
+                <p class="text-white text-center sm:text-sm lg:text-xl">Bootstrap</p>
               </div>
               <div class=" border-double border-4 border-sky-900 bg-black">
                 <img class=" mt-5 mb-3" src="/assets/vuetify.svg" alt="vuetify Logo">
-                <p class="text-white text-center">Vuetify</p>
+                <p class="text-white text-center sm:text-sm lg:text-xl">Vuetify</p>
               </div>
               <div class=" border-double border-4 border-sky-900 bg-black">
-                <img class=" mt-5 mb-3" src="/assets/tailwind.svg" alt="tailwind Logo">
-                <p class="text-white text-center">Tailwind css</p>
+                <img class="mt-5 mb-3" src="/assets/tailwind.svg" alt="tailwind Logo">
+                <p class="text-white text-center sm:text-sm lg:text-xl">Tailwind css</p>
               </div>
               <div class=" border-double border-4 border-sky-900 bg-black">
                 <img class=" mt-5 mb-3" src="/assets/scss.svg" alt="scss Logo">
-                <p class="text-white text-center">Sass/Scss</p>
+                <p class="text-white text-center sm:text-sm lg:text-xl">Sass/Scss</p>
               </div>
             </div>
           </div>
-
-          <!-- <div class="flex-item item-10 text-center space-y-4 sm:text-left">
-            <div class="space-y-0.5">
-              <p class="text-slate-500 font-medium mt-7">
-                Front-End Backend
-              </p>
-            </div>
-            <div class="p-6 max-w-2xl mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
-              <div class="border-double border-4 border-sky-900 bg-black">
-                <img class=" mt-5 mb-3" src="/assets/nodejs.svg" alt="nodejs Logo">
-                <p class="text-white text-center">Nodejs</p>
-              </div>
-              <div class="border-double border-4 border-sky-900 bg-black">
-                <img class=" mt-5 mb-3" src="/assets/sql-mysql.svg" alt="nodejs Logo">
-                <p class="text-white text-center">mysql</p>
-              </div>
-            </div>
-          </div> -->
       </div>
       </div>
   </div>
@@ -325,15 +307,116 @@ updateColorFromHex();
 }
 
 .item-1 {
-  width: 50%; 
+  width: 100%; /* 修正為100%寬度，佔滿整個行 */
+  order: 1; /* 調整順序，預設在小尺寸時顯示在上面 */
+  margin-top: 100px;
 }
 
 .item-2 {
-  width: 50%; 
+  width: 100%; /* 修正為100%寬度，佔滿整個行 */
+  order: 2; /* 調整順序，預設在小尺寸時顯示在下面 */
+  /* margin-top: 80px; */
+}
+
+@media (min-width: 641px) {
+  .item-1 {
+    width: 50%; /* 大尺寸時，佔據一半寬度 */
+    order: 0; /* 恢復預設順序 */
+  }
+  
+  .item-2 {
+    width: 50%; /* 大尺寸時，佔據一半寬度 */
+    order: 0; /* 恢復預設順序 */
+  }
+
 }
 
 .job-title {
   margin-top: 20px;
+}
+
+.experience {
+  display: flex;
+  width: 1450px;
+  margin: 0 auto;
+  gap:30px;
+  margin-bottom: 200px;
+  align-items: flex-start;
+}
+
+
+.item-5 {
+  width: 60%;
+  order: 1;
+}
+
+.item-6 {
+  width: 40%;
+  order: 2;
+}
+
+@media (max-width: 640px) {
+
+  .experience {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-bottom: 100px; 
+    margin-top: 70px;
+  }
+
+  .flight-trainning {
+    width: 300px;
+    height: 300px;
+
+  }
+
+  .geosat{
+    width: 300px;
+    height: 300px;
+  }
+  
+  .road{
+    width: 300px;
+    height: 300px;
+  }
+
+  .nkuht-school {
+    font-size: 20px;
+  }
+
+  .nkuht{
+    width: 350px;
+    height: 320px;
+    }
+
+  .ispan {
+    width: 350px;
+    height: 200px;
+   }
+
+   .skill {
+      img {
+        width: 40px; 
+        height: 50px; 
+        object-fit: contain; 
+        display: block;
+      }
+    }
+
+  .css-frameworks {
+    width: 300px;
+    height: 300px;
+    flex-wrap: wrap;
+  }
+
+  .item-5{
+    width: 28%; /* 小屏幕下佔滿寬度 */
+  }
+
+  .item-6 {
+    width: 27%; /* 小屏幕下佔滿寬度 */
+  }
 }
 
 .slider {
@@ -349,7 +432,7 @@ updateColorFromHex();
 .blue,
 .alpha {
   border-radius: 20%;
-  padding: 13px;
+  padding: 10px;
 }
 
 .red {
@@ -376,39 +459,19 @@ h2 {
   padding: 5px 30px;
 }
 
-.experience {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 1450px;
-  margin: 0 auto;
-  gap:20px;
-  margin-bottom: 200px;
-  align-items: flex-start;
-}
-
-
-.item-5 {
-  width: 60%;
-}
-
-.item-6 {
-  width: 50%;
-}
-
 .skill {
   display: flex;
   flex-wrap: wrap;
-  width: 1100px;
   margin: 0 auto;
   margin-bottom: 200px;
 }
 
 .item-7 {
-  width: 45%;
+  width: 100%;
 }
 
 .item-8 {
-  width: 45%;
+  width: 100%;
 }
 
 .item-9 {
@@ -416,8 +479,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* .item-10 {
-  width: 35%;
-} */
+
 
 </style>
