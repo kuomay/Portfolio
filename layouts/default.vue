@@ -33,7 +33,7 @@ const setCurrent = (item) => {
         </div>
         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex flex-shrink-0 items-center">
-            <span class="text-xl font-bold text-teal-200 "> Sin-Mei, Kuo.</span>
+            <span class="text-xl font-bold text-teal-200 "> Sin-Mei, Kuo</span>
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">

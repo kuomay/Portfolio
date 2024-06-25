@@ -2,11 +2,11 @@
   <div class="scroller w-screen overflow-y-scroll 2xl:h-[calc(100vh-4rem)] 2xl:snap-y 2xl:snap-mandatory">
       <!-- 個人 -->
       <div class="flex-container 2xl:snap-center">
-        <div class="flex-item item-1">
-          <h1 class="animate__animated animate__backInLeft sm:text-xs lg:text-4xl">Hi, I'm a Frontend Engineer.</h1>
+        <div class="flex-item item-1 ">
+          <h1 class="animate__animated animate__backInLeft text-xl lg:text-4xl md:text-4xl">Hi, I'm a Frontend Engineer.</h1>
           <h1 class="animate__animated animate__backInLeft mt-6">
-            <span class="job-title sm:text-xs lg:text-4xl">My name is</span>
-            <span class="sm:text-3xl lg:text-6xl font-bold text-violet-300"> Sin-Mei, Kuo</span>
+            <span class="job-title sm:text-xs lg:text-4xl  md:text-4xl">My name is</span>
+            <span class="sm:text-3xl lg:text-6xl font-bold text-violet-300"> Sin-Mei, Kuo.</span>
           </h1>
         </div>
 
@@ -15,29 +15,29 @@
             <h2 class="rounded-lg bg-gray-200 w-72 h-20 lg:w-80" :style="{ backgroundColor: rgbaCode }"></h2>
 
             <!-- RGB 調節器 -->
-            <div>
-              <span class="red">R</span>
-              <input type="range" v-model.number="rgb[0]" min="0" max="255" class="mr-3 mx-3 lg:w-48 sm:w-15">
-              <span class="red">{{ rgb[0] }}</span>
+            <div class="slider-item">
+              <span class="red w-20 pr-2">R</span>
+              <input type="range" v-model.number="rgb[0]" min="0" max="255" class="mr-3 mx-3 lg:w-48 w-40">
+              <span class="red ">{{ rgb[0] }}</span>
             </div>
-            <div>
-              <span class="green">G</span>
-              <input type="range" v-model.number="rgb[1]" min="0" max="255" class="mr-3 mx-3 lg:w-48 sm:w-15">
+            <div class="slider-item">
+              <span class="green w-20 pr-2">G</span>
+              <input type="range" v-model.number="rgb[1]" min="0" max="255" class="mr-3 mx-3 lg:w-48 w-40">
               <span class="green">{{ rgb[1] }}</span>
             </div> 
-            <div>
-              <span class="blue">B</span>
-              <input type="range" v-model.number="rgb[2]" min="0" max="255" class="mr-3 mx-3 lg:w-48 sm:w-15">
+            <div class="slider-item">
+              <span class="blue w-20 pr-2">B</span>
+              <input type="range" v-model.number="rgb[2]" min="0" max="255" class="mr-3 mx-3 lg:w-48 w-40">
               <span class="blue">{{ rgb[2] }}</span>
             </div>
-            <div>
-              <span class="alpha">opacity</span>
-              <input type="range" v-model.number="alpha" min="0" max="1" step="0.01" class="mr-3 mx-3  lg:w-48 sm:w-15">
+            <div class="slider-item">
+              <span class="alpha w-20 text-sm pr-2 ">opacity</span>
+              <input type="range" v-model.number="alpha" min="0" max="1" step="0.01" class="mr-3 mx-3  lg:w-48 w-40">
               <span class="alpha mr-12">{{ alpha.toFixed(2) }}</span>
             </div>
 
             <!-- 顏色展示和 RGBA Code -->
-            <div class="flex flex-row sm:flex flex-col ">
+            <div class="flex flex-row sm:flex flex-col">
               <div class="" @click="copyHexCode">
                 <h2 class="hex-code flex items-center justify-center lg:h-20 rounded-lg">{{ hexCode }}</h2>
               </div>
@@ -57,11 +57,12 @@
           
             <div class="text-center space-y-2 sm:text-start">
               <div class="space-y-0.5">
-                <p class="lg:text-4xl mr-9 text-white font-semibold underline underline-offset-8 mb-5">
+                <p class="lg:text-4xl mr-9 text-white font-semibold underline underline-offset-8 mb-5 md:text-4xl">
                   Experience
                 </p>
-                <p class="text-sm mr-9 lg:text-2xl text-slate-500">
-                  GEOSAT Aerospace & Technology Front-End Engineer
+                <p class="lg:text-2xl text-slate-500">
+                  <span class="text-xl md:text-3xl">GEOSAT Aerospace & Technology </span> 
+                  <span class="hidden :block md:text-3xl">Front-End Engineer</span>
                 </p>
                 <p class="text-slate-500 mr-9 font-thin">2023.05-2024.06</p>
               </div>
@@ -165,15 +166,15 @@
         <h1 class="text-center mb-5 text-white font-semibold underline underline-offset-8 sm:text-sm lg:text-4xl">
               SKILLS
         </h1>
-        <div class="skill py-8 px-8  bg-stone-900 rounded-xl shadow-lg space-y-2 sm:py-4 sm:space-y-0 sm:space-x-6 w-11/12 lg:w-2/3 sm:flex flex-col">    
+        <div class="skill py-8 px-8  bg-stone-900 rounded-xl shadow-lg space-y-2 sm:py-4 sm:space-y-0 sm:space-x-6 w-11/12 lg:w-2/4 sm:flex flex-col">    
 
-          <div class="flex-item item-7 text-center space-y-4 sm:text-left sm:flex-wrap">
+          <div class="flex-item mx-auto item-7 text-center space-y-4 sm:text-left">
             <div class="space-y-0.5">
-              <p class="text-slate-500 font-medium mt-7">
+              <p class="text-slate-500 font-medium ">
                 Front-End Basic
               </p>
             </div>
-            <div class="p-6 lg:mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 w-70 lg:max-w-2xl">
+            <div class="p-6 lg:mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 w-70 lg:w-full lg:max-w-sm ">
               <div class="w-20 lg:w-32 border-double border-4 border-sky-900 bg-black">
                 <img class="" src="/assets/javascript.svg" alt="javascript Logo">
                 <p class="text-white text-center text-sm lg:text-xl">JavaScript</p>
@@ -189,23 +190,23 @@
             </div>
           </div>
 
-          <div class="flex-item item-8 text-center space-y-4 sm:text-left sm:flex-wrap">
+          <div class="flex-item item-8 mx-auto text-center space-y-4 sm:text-left">
             <div class="space-y-0.5">
               <p class="text-slate-500 font-medium mt-7">
                 Front-End Framework
               </p>
             </div>
-            <div class="p-6 lg:mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 w-70 lg:max-w-2xl">
+            <div class="p-6 lg:mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 w-70 lg:w-full lg:max-w-sm">
               <div class="w-20 lg:w-32 border-double border-4 border-sky-900 bg-black">
-                <img class="mt-5 mb-3" src="/assets/vue.svg" alt="vue Logo">
+                <img class="" src="/assets/vue.svg" alt="vue Logo">
                 <p class="text-white text-center text-sm lg:text-xl">Vue</p>
               </div>
               <div class="w-20 lg:w-32 border-double border-4 border-sky-900 bg-black">
-                <img class=" mt-5 mb-3" src="/assets/nuxt.svg" alt="nuxt Logo">
+                <img class="" src="/assets/nuxt.svg" alt="nuxt Logo">
                 <p class="text-white text-center text-sm lg:text-xl">Nuxt</p>
               </div>
               <div class="w-20 lg:w-32 border-double border-4 border-sky-900 bg-black">
-                <img class=" mt-5 mb-3" src="/assets/pinia.svg" alt="pinia Logo">
+                <img class="" src="/assets/pinia.svg" alt="pinia Logo">
                 <p class="text-white text-center text-sm lg:text-xl">Pinia</p>
               </div>
             </div>
@@ -217,21 +218,21 @@
                 CSS Frameworks and Preprocessors
               </p>
             </div>
-            <div class="p-6 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 w-64 h-80 flex-wrap lg:max-w-2xl">
-              <div class="w-20 lg:w-32 ml-4 border-double border-4 border-sky-900 bg-black">
-                <img class="mt-5 mb-3" src="/assets/bootstrap.svg" alt="bootstrap Logo">
+            <div class="p-6 mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 w-64 h-80 lg:h-60 lg:w-full lg:max-w-xl flex-wrap lg:flex-nowrap ">
+              <div class="icon w-20 h-28 lg:w-96 lg:h-40 ml-4 border-double border-4 border-sky-900 bg-black">
+                <img class="" src="/assets/bootstrap.svg" alt="bootstrap Logo">
                 <p class="text-white text-center text-sm lg:text-xl">Bootstrap</p>
               </div>
-              <div class="w-20 lg:w-32 border-double border-4 border-sky-900 bg-black">
-                <img class=" mt-5 mb-3" src="/assets/vuetify.svg" alt="vuetify Logo">
+              <div class="icon w-20 h-28 lg:w-96 lg:h-40 border-double border-4 border-sky-900 bg-black">
+                <img class=" " src="/assets/vuetify.svg" alt="vuetify Logo">
                 <p class="text-white text-center text-sm lg:text-xl">Vuetify</p>
               </div>
-              <div class="w-20 lg:w-32  border-double border-4 border-sky-900 bg-black">
-                <img class="mt-5 mb-3" src="/assets/tailwind.svg" alt="tailwind Logo">
+              <div class="icon w-20 lg:w-96 lg:h-40 border-double border-4 border-sky-900 bg-black">
+                <img class="" src="/assets/tailwind.svg" alt="tailwind Logo">
                 <p class="text-white text-center text-sm lg:text-xl">Tailwind css</p>
               </div>
-              <div class="w-20 lg:w-32 border-double border-4 border-sky-900 bg-black">
-                <img class=" mt-5 mb-3" src="/assets/scss.svg" alt="scss Logo">
+              <div class="icon w-20 h-28 lg:w-96 lg:h-40 border-double border-4 border-sky-900 bg-black">
+                <img class="" src="/assets/scss.svg" alt="scss Logo">
                 <p class="text-white text-center text-sm lg:text-xl">Sass/Scss</p>
               </div>
             </div>
@@ -309,13 +310,13 @@ updateColorFromHex();
 .item-1 {
   width: 100%; /* 修正為100%寬度，佔滿整個行 */
   order: 1; /* 調整順序，預設在小尺寸時顯示在上面 */
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .item-2 {
   width: 100%; /* 修正為100%寬度，佔滿整個行 */
   order: 2; /* 調整順序，預設在小尺寸時顯示在下面 */
-  /* margin-top: 80px; */
+  /* margin-bottom: 180px; */
 }
 
 @media (min-width: 641px) {
@@ -328,7 +329,6 @@ updateColorFromHex();
     width: 50%; /* 大尺寸時，佔據一半寬度 */
     order: 0; /* 恢復預設順序 */
   }
-
 }
 
 .job-title {
@@ -340,7 +340,7 @@ updateColorFromHex();
   width: 1450px;
   margin: 0 auto;
   gap:30px;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
   align-items: flex-start;
 }
 
@@ -362,7 +362,7 @@ updateColorFromHex();
     flex-direction: column; 
     align-items: flex-start; 
     margin-bottom: 100px; 
-    margin-top: 70px;
+    margin-top: 220px;
   }
 
   .flight-trainning {
@@ -405,11 +405,11 @@ updateColorFromHex();
     }
 
   .item-5{
-    width: 31%; /* 小屏幕下佔滿寬度 */
+    width: 23.5rem; /* 小屏幕下佔滿寬度 */
   }
 
   .item-6 {
-    width: 27%; /* 小屏幕下佔滿寬度 */
+    width: 23.3rem; /* 小屏幕下佔滿寬度 */
   }
 }
 
@@ -422,12 +422,27 @@ updateColorFromHex();
   align-items: center;
 }
 
+.slider-item {
+  display: flex;
+  align-items: center;
+}
+
+.value {
+  width: 40px;
+  text-align: left;
+  margin-left: 10px;
+}
+
 .red,
 .green,
 .blue,
 .alpha {
   border: #484545 1px solid;
   padding: 10px;
+  /* width: 30px; */
+  width: 70px;
+  text-align: center;
+  margin-right: 10px;
 }
 
 .red {
@@ -455,8 +470,6 @@ h2 {
 }
 
 .skill {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0 auto;
   margin-bottom: 200px;
 }
@@ -466,11 +479,11 @@ h2 {
 }
 
 .item-8 {
-  width: 100%;
+  width: 95%;
 }
 
 .item-9 {
-  width: 100%;
+  width: 95%;
   margin-bottom: 10px;
 }
 
