@@ -1,5 +1,5 @@
 <template>
-      <div class="flight-trainning  mx-auto p-6 max-w-5xl bg-white rounded-xl shadow-lg flex items-center space-x-4">
+      <div class="flight-trainning mb-16 mx-auto p-6 max-w-5xl bg-white rounded-xl shadow-lg flex items-center space-x-4">
                 <div class="">
                   <img class="h-80  hidden sm:block" src="/assets/013 2024-06-21 185608.png" alt="">
                 </div>
@@ -14,9 +14,10 @@
                  
                   <p class="text-slate-500">
                     該平台提供有關無人機飛行員培訓、考試細節和線上模擬考試的資訊。</p>
-                   
                 </div>
-              </div>
+      </div>
+      <div class="flex justify-center"><alarm /></div>
+      
 </template>
 
 <style>
