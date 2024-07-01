@@ -6,18 +6,11 @@
       <div class="center-dot"></div>
       <div class="inner-shadow"></div>
       
-      <div class="marking quarter" style="transform: translateX(-50%) rotate(0deg);"></div>
-      <div class="marking" style="transform: translateX(-50%) rotate(30deg);"></div>
-      <div class="marking" style="transform: translateX(-50%) rotate(60deg);"></div>
-      <div class="marking quarter" style="transform: translateX(-50%) rotate(90deg);"></div>
-      <div class="marking" style="transform: translateX(-50%) rotate(120deg);"></div>
-      <div class="marking" style="transform: translateX(-50%) rotate(150deg);"></div>
-      <div class="marking quarter" style="transform: translateX(-50%) rotate(180deg);"></div>
-      <div class="marking" style="transform: translateX(-50%) rotate(210deg);"></div>
-      <div class="marking" style="transform: translateX(-50%) rotate(240deg);"></div>
-      <div class="marking quarter" style="transform: translateX(-50%) rotate(270deg);"></div>
-      <div class="marking" style="transform: translateX(-50%) rotate(300deg);"></div>
-      <div class="marking" style="transform: translateX(-50%) rotate(330deg);"></div>
+      <div v-for="i in 12" :key="i" 
+           class="marking" 
+           :class="{ quarter: i % 3 === 0 }"
+           :style="{ transform: `translateX(-50%) rotate(${(i - 1) * 30}deg)` }">
+      </div>
   
       <div class="number" style="left: 143px; top: 60px;">12</div>
       <div class="number" style="left: 223px; top: 140px;">3</div>
@@ -27,36 +20,39 @@
   </template>
   
   <script setup>
-import { ref, onMounted } from 'vue';
-
-const hourHand = ref<HTMLDivElement | null>(null);
-const minuteHand = ref<HTMLDivElement | null>(null);
-const secondHand = ref<HTMLDivElement | null>(null);
-
-function updateClockHands() {
-  if (secondHand.value && minuteHand.value && hourHand.value) {
+  import { ref, onMounted, onUnmounted } from 'vue';
+  
+  const hourHand = ref(null);
+  const minuteHand = ref(null);
+  const secondHand = ref(null);
+  
+  let intervalId;
+  
+  function updateClockHands() {
     const now = new Date();
     const seconds = now.getSeconds();
     const minutes = now.getMinutes();
     const hours = now.getHours() % 12;
-
+  
     // 計算角度
     const secondDegrees = (seconds / 60) * 360;
     const minuteDegrees = ((minutes + seconds / 60) / 60) * 360;
     const hourDegrees = ((hours + minutes / 60) / 12) * 360;
-
+  
     // 指針位置
     secondHand.value.style.transform = `translateX(-50%) rotate(${secondDegrees}deg)`;
     minuteHand.value.style.transform = `translateX(-50%) rotate(${minuteDegrees}deg)`;
     hourHand.value.style.transform = `translateX(-50%) rotate(${hourDegrees}deg)`;
   }
-}
-
-onMounted(() => {
-  updateClockHands();
-  setInterval(updateClockHands, 1000);
-});
-
+  
+  onMounted(() => {
+    updateClockHands();
+    intervalId = setInterval(updateClockHands, 1000);
+  });
+  
+  onUnmounted(() => {
+    clearInterval(intervalId);
+  });
   </script>
   
   <style scoped>
@@ -169,4 +165,3 @@ onMounted(() => {
     font-weight: bold;
   }
   </style>
-  
