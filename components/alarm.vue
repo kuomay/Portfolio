@@ -27,33 +27,36 @@
   </template>
   
   <script setup>
-  import { ref, onMounted } from 'vue';
-  
-  const hourHand = ref(null);
-  const minuteHand = ref(null);
-  const secondHand = ref(null);
-  
-  function updateClockHands() {
+import { ref, onMounted } from 'vue';
+
+const hourHand = ref<HTMLDivElement | null>(null);
+const minuteHand = ref<HTMLDivElement | null>(null);
+const secondHand = ref<HTMLDivElement | null>(null);
+
+function updateClockHands() {
+  if (secondHand.value && minuteHand.value && hourHand.value) {
     const now = new Date();
     const seconds = now.getSeconds();
     const minutes = now.getMinutes();
     const hours = now.getHours() % 12;
-  
+
     // 計算角度
     const secondDegrees = (seconds / 60) * 360;
     const minuteDegrees = ((minutes + seconds / 60) / 60) * 360;
     const hourDegrees = ((hours + minutes / 60) / 12) * 360;
-  
+
     // 指針位置
     secondHand.value.style.transform = `translateX(-50%) rotate(${secondDegrees}deg)`;
     minuteHand.value.style.transform = `translateX(-50%) rotate(${minuteDegrees}deg)`;
     hourHand.value.style.transform = `translateX(-50%) rotate(${hourDegrees}deg)`;
   }
-  
-  onMounted(() => {
-    updateClockHands();
-    setInterval(updateClockHands, 1000);
-  });
+}
+
+onMounted(() => {
+  updateClockHands();
+  setInterval(updateClockHands, 1000);
+});
+
   </script>
   
   <style scoped>

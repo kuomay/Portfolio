@@ -37,7 +37,7 @@
             </div>
 
             <!-- 顏色展示和 RGBA Code -->
-            <div class="flex flex-row sm:flex flex-col">
+            <div class="lg:flex lg:flex-row flex flex-col">
               <div class="" @click="copyHexCode">
                 <h2 class="hex-code flex items-center justify-center lg:h-20 rounded-lg">{{ hexCode }}</h2>
               </div>
@@ -395,13 +395,12 @@ updateColorFromHex();
     height: 200px;
    }
 
-   .skill {
-      img {
-        width: 40px; 
-        height: 50px; 
-        object-fit: contain; 
-        display: block;
-      }
+
+  .img {
+      width: 40px; 
+      height: 50px; 
+      object-fit: contain; 
+      display: block;
     }
 
   .item-5{
