@@ -15,8 +15,10 @@
                   <p class="text-slate-500">
                     該平台提供有關無人機飛行員培訓、考試細節和線上模擬考試的資訊。</p>
                 </div>
+                
       </div>
-      <div class="flex justify-center"><alarm /></div>
+      <div class="h-full"><cart /></div>
+      <div class="mt-16 mb-10 flex justify-center"><alarm /></div>
       
 </template>
 
@@ -41,7 +43,5 @@ a:hover {
   width: 300px;
   height: 300px;
 }
-
 }
-
 </style>
