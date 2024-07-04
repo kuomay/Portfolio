@@ -1,4 +1,5 @@
 <template>
+  <div class="mx-auto p-6 max-w-5xl bg-white rounded-xl shadow-lg">   
     <div class="clock">
       <div class="hand hour" ref="hourHand"></div>
       <div class="hand minute" ref="minuteHand"></div>
@@ -17,6 +18,8 @@
       <div class="number" style="left: 146px; top: 220px;">6</div>
       <div class="number" style="left: 63px; top: 140px;">9</div>
     </div>
+  </div>
+ 
   </template>
   
   <script setup>
@@ -56,14 +59,6 @@
   </script>
   
   <style scoped>
-  body {
-    background-color: #2e2d2d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
   
   .clock {
     width: 300px;

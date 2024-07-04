@@ -17,7 +17,22 @@
                 </div>
                 
       </div>
+      <div>
+        <h1 class="text-white text-center text-xl font-bold">這是一個使用 Vue 3 開發的簡單但功能完整的購物車應用。</h1>
+        <div class="flex flex-row flex-wrap justify-center mb-5"> 
+          <div class="w-20 h-7 text-center mt-2 mb-2 mr-2 px-4 py-1 text-sm text-lime-800 font-semibold rounded-full border border-green-800 hover:text-white hover:bg-green-800 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-green-800 focus:ring-offset-2">Vue3</div>
+          <div class="w-22 h-7  mt-2 mb-2 mr-2 px-4 py-1 text-sm text-blue-600 font-semibold rounded-full border border-blue-600 hover:text-white hover:bg-blue-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">tailwindcss</div>
+        </div>
+      </div>
       <div class="h-full"><cart /></div>
+      <div>
+        <h1 class="mt-16 text-white text-xl text-center font-bold">這是一個使用 Vue 3 開發的簡潔的數字時鐘應用。</h1>
+        <div class="flex flex-row flex-wrap justify-center mb-5"> 
+          <div class="w-20 h-7 text-center mt-2 mb-2 mr-2 px-4 py-1 text-sm text-lime-800 font-semibold rounded-full border border-green-800 hover:text-white hover:bg-green-800 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-green-800 focus:ring-offset-2">Vue3</div>
+          <div class="w-22 h-7  mt-2 mb-2 mr-2 px-4 py-1 text-sm text-blue-600 font-semibold rounded-full border border-blue-600 hover:text-white hover:bg-blue-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">tailwindcss</div>
+        </div>
+      </div>
+      
       <div class="mt-16 mb-10 flex justify-center"><alarm /></div>
       
 </template>

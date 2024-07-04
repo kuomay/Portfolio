@@ -141,7 +141,7 @@
                 <p class="nkuht-school lg:text-slate-500">
                   Department of Leisure and  Recreation Management</p>
                   <p class="text-slate-600">
-                    2018,09-2022,06</p>
+                    2018.09-2022.06</p>
               </div>
             </div>
 
@@ -154,7 +154,7 @@
                 <p class="text-slate-500">
                   Front-End Engineer Training Program</p>
                   <p class="text-slate-600">
-                    2022,09-2024,02</p>
+                    2022.09-2024.02</p>
               </div>
             </div>
           </div>
