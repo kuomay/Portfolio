@@ -164,7 +164,7 @@
       <!-- SKILL -->
       <div class="2xl:snap-center">
         <h1 class="text-center mb-5 text-white font-semibold underline underline-offset-8 sm:text-sm lg:text-4xl">
-              SKILLSs
+              SKILLS
         </h1>
         <div class="skill py-8 px-8  bg-stone-900 rounded-xl shadow-lg space-y-2 sm:py-4 sm:space-y-0 sm:space-x-6 w-11/12 lg:w-2/4  sm:flex flex-col">    
 
