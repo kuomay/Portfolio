@@ -50,9 +50,104 @@
         </div>
       </div>
 
-            <!-- 經歷 -->
+      <!-- 經歷 -->
       <div class="experience 2xl:snap-center">
-          <!-- 經歷 -->
+          <!-- 山水經歷 -->
+          <div class="flex-item item-5 h-750 rounded-xl lg:py-8 lg:px-8">
+          
+            <div class="text-center space-y-2 sm:text-start">
+              <div class="space-y-0.5">
+                <p class="lg:text-4xl mr-9 text-white font-semibold underline underline-offset-8 mb-5 md:text-4xl">
+                  Experience
+                </p>
+                <p class="lg:text-2xl text-slate-500">
+                  <span class="text-xl md:text-3xl">MID Technologies Co. Ltd. </span> 
+                  <span class="hidden :block md:text-3xl">Front-End Engineer</span>
+                </p>
+                <p class="text-slate-500 mr-9 font-thin">2024.08-2025.05</p>
+              </div>
+              <!-- 1 -->
+              <div class="flight-trainning p-6 max-w-3xl bg-white rounded-xl shadow-lg flex items-center space-x-4">
+                <div class="shrink-0">
+                  <img class="w-80 h-40 hidden sm:block" src="/assets/Egoodlink.png" alt="">
+                </div>
+                <div>
+                  <div class="text-xl font-medium text-black ">安心E股領</div>
+                  <div class="flex flex-row flex-wrap"> 
+                    <div class="w-20 h-7 text-center mt-2 mb-2 mr-2 px-4 py-1 text-sm text-lime-800 font-semibold rounded-full border border-green-800 hover:text-white hover:bg-green-800 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-green-800 focus:ring-offset-2">Nuxt3</div>
+                    <div class="w-20 h-7 text-center mt-2 mb-2 mr-2 px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-600 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Pinia</div>
+                    <div class="w-20 h-7 text-center mt-2 mb-2 mr-2 px-4 py-1 text-sm text-cyan-950 font-semibold rounded-full border border-cyan-800 hover:text-white hover:bg-cyan-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2">Vuetify</div>
+                    <div class="w-22 h-7  mt-2 mb-2 mr-2 px-4 py-1 text-sm text-pink-600 font-semibold rounded-full border border-pink-600 hover:text-white hover:bg-pink-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2">Sass/SCSS</div>
+                  </div>
+                 
+                  <p class="text-slate-500">
+                    安心e股領提供從證券開戶、贈品表單更新、零股購買指導、電子投票協助，到領貨和配貨等一站式服務，讓您輕鬆掌握每一項流程。</p>
+                </div>
+              </div>
+
+              <!-- 2 -->
+              <div class="flight-trainning p-6 max-w-3xl bg-white rounded-xl shadow-lg flex items-center space-x-4">
+                <div class="shrink-0">
+                  <img class="w-80 h-40 hidden sm:block" src="/assets/childhood.png" alt="">
+                </div>
+                <div>
+                  <div class="text-xl font-medium text-black ">小拾後</div>
+                  <div class="flex flex-row flex-wrap"> 
+                    <div class="w-20 h-7 text-center mt-2 mb-2 mr-2 px-4 py-1 text-sm text-lime-800 font-semibold rounded-full border border-green-800 hover:text-white hover:bg-green-800 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-green-800 focus:ring-offset-2">Nuxt3</div>
+                    <div class="w-20 h-7 text-center mt-2 mb-2 mr-2 px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-600 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Pinia</div>
+                    <div class="w-20 h-7 text-center mt-2 mb-2 mr-2 px-4 py-1 text-sm text-cyan-950 font-semibold rounded-full border border-cyan-800 hover:text-white hover:bg-cyan-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:ring-offset-2">CI4</div>
+                    <div class="w-22 h-7  mt-2 mb-2 mr-2 px-4 py-1 text-sm text-pink-600 font-semibold rounded-full border border-pink-600 hover:text-white hover:bg-pink-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2">Sass/SCSS</div>
+                  </div>
+                 
+                  <p class="text-slate-500">
+                    關於小拾後，是個抓周預約網站。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 學歷 -->
+          <div class="flex-item item-6 rounded-xl space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">    
+          <div class="text-center space-y-2 sm:text-left">
+            <div class="space-y-0.5">
+              <p class="lg:text-4xl text-white font-semibold underline underline-offset-8 mb-5 mt-4">
+                Education
+              </p>
+              <p class="text-slate-500 lg:text-2xl">
+                Highest Education
+              </p>
+            </div>
+            <div class="nkuht p-6 max-w-2xl mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+              <div class="shrink-0">
+                <img class="h-12 w-12" src="https://www.nkuht.edu.tw/var/file/0/1000/img/22/logo.gif" alt="NKUHT Logo">
+              </div>
+              <div>
+                <div class="nkuht-school lg:text-xl font-medium text-black">NKUHT</div>
+                <p class="nkuht-school lg:text-slate-500">
+                  Department of Leisure and  Recreation Management</p>
+                  <p class="text-slate-600">
+                    2018.09-2022.06</p>
+              </div>
+            </div>
+
+            <div class="ispan p-6 max-w-2xl mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+              <div class="shrink-0">
+                <img class="h-12 w-12" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHccVyKLa3JFZlTEzKGdPaE-msts8a3C_ymQ&s" alt="iSpan Logo">
+              </div>
+              <div>
+                <div class="font-medium text-black lg:text-xl ">iSpan International Inc.</div>
+                <p class="text-slate-500">
+                  Front-End Engineer Training Program</p>
+                  <p class="text-slate-600">
+                    2022.09-2024.02</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience 2xl:snap-center mt-10">
+          <!-- 經緯經歷 -->
           <div class="flex-item item-5 h-750 rounded-xl lg:py-8 lg:px-8">
           
             <div class="text-center space-y-2 sm:text-start">
@@ -121,45 +216,7 @@
             </div>
           </div>
 
-          <!-- 學歷 -->
-          <div class="flex-item item-6 rounded-xl space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">    
-          <div class="text-center space-y-2 sm:text-left">
-            <div class="space-y-0.5">
-              <p class="lg:text-4xl text-white font-semibold underline underline-offset-8 mb-5 mt-4">
-                Education
-              </p>
-              <p class="text-slate-500 lg:text-2xl">
-                Highest Education
-              </p>
-            </div>
-            <div class="nkuht p-6 max-w-2xl mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
-              <div class="shrink-0">
-                <img class="h-12 w-12" src="https://www.nkuht.edu.tw/var/file/0/1000/img/22/logo.gif" alt="NKUHT Logo">
-              </div>
-              <div>
-                <div class="nkuht-school lg:text-xl font-medium text-black">NKUHT</div>
-                <p class="nkuht-school lg:text-slate-500">
-                  Department of Leisure and  Recreation Management</p>
-                  <p class="text-slate-600">
-                    2018.09-2022.06</p>
-              </div>
-            </div>
-
-            <div class="ispan p-6 max-w-2xl mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
-              <div class="shrink-0">
-                <img class="h-12 w-12" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHccVyKLa3JFZlTEzKGdPaE-msts8a3C_ymQ&s" alt="iSpan Logo">
-              </div>
-              <div>
-                <div class="font-medium text-black lg:text-xl ">iSpan International Inc.</div>
-                <p class="text-slate-500">
-                  Front-End Engineer Training Program</p>
-                  <p class="text-slate-600">
-                    2022.09-2024.02</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
+      </div>
 
       <!-- SKILL -->
       <div class="2xl:snap-center">
@@ -208,6 +265,21 @@
               <div class="w-20 lg:w-32 border-double border-4 border-sky-900 bg-black">
                 <img class="" src="/assets/pinia.svg" alt="pinia Logo">
                 <p class="text-white text-center text-sm lg:text-xl">Pinia</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-item item-10 text-center space-y-4 sm:text-left">
+            <div class="space-y-0.5">
+              <p class="text-slate-500 font-medium mt-7">
+                Back-End Framework
+              </p>
+            </div>
+
+            <div class="p-6 mx-auto bg-white rounded-xl shadow-lg flex items-center justify-center space-x-4 w-70 lg:w-full lg:max-w-sm">
+              <div class="w-20 lg:w-32 border-double border-4 border-sky-900 bg-black">
+                <img class="mx-auto" src="/assets/codeigniter.svg" alt="CI4 Logo">
+                <p class="text-white text-center text-sm lg:text-xl">CodeIgniter 4</p>
               </div>
             </div>
           </div>
@@ -486,6 +558,9 @@ h2 {
   margin-bottom: 10px;
 }
 
-
+.item-10 {
+  width: 95%;
+  margin-bottom: 10px;
+}
 
 </style>
