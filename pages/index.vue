@@ -312,10 +312,12 @@
       </div>
       </div>
   </div>
+  <CursorTrail />
 </template>
 
 <script setup>
 import { ref, watchEffect } from 'vue';
+import CursorTrail from '@/components/CursorTrail.vue';
 
 // 定義 ref
 const rgb = ref([0, 0, 0]);

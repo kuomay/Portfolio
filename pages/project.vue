@@ -65,6 +65,7 @@
       </div>
       <div class="mt-16 mb-16  flex justify-center"><alarm /></div>
       
+      <CursorTrail />
 </template>
 
 <style>
